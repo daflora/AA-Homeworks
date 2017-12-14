@@ -25,6 +25,10 @@ def dominant(arr)
   fish=dominant(less_than)+[answer]+dominant(greater_than)
 end
 
+def dominant_dance(arr)
+  dominant(arr).last
+end
+
 def clever(arr)
   longest= arr[0]
   arr.each do |el|
@@ -57,3 +61,4 @@ p dominant(a).last
 p clever(a)
 p slow_dance("up")
 p quick_dance("up", new_tiles_data_structure)
+p dominant_dance(a)
